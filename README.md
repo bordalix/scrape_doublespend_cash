@@ -10,7 +10,7 @@ Bitcoin Cash accepts 0-conf payments, which I consider insecure by default.
 Since someone developed a website for detecting double spends on the Bitcoin Cash network,
 I decided to scrape it and get some numbers from it. The site in question is:
 
-[doublespend.cash](https://doublespend.cash)
+[https://doublespend.cash](https://doublespend.cash)
 
 ### Numbers:
 
