@@ -27,4 +27,5 @@ I decided to scrape it and get some numbers from it. The site in question is:
 
 - A success rate of 27% is crazy!
 - More than one quarter of double spends are successful.
+
 I now can state, with more confidence, that 0-conf is not secure.
