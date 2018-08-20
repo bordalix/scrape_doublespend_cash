@@ -3,13 +3,11 @@
 ### Bitcoin Cash double spends
 
 Double spend is when a set of coins is spent in more than one transaction.
-
 This can happen for various reasons, but one of the reasons is fraud attempts.
 
 Bitcoin Cash accepts 0-conf payments, which I consider insecure by default.
 
 Since someone developed a website for detecting double spends on the Bitcoin Cash network,
-
 I decided to scrape it and get some numbers from it. The site in question is:
 
 [doublespend.cash](https://doublespend.cash)
