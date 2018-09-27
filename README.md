@@ -19,7 +19,8 @@ I decided to scrape it and get some numbers from it. The site in question is:
 - Date of last transaction, 2018-09-25 10:50:02 +0100
 - Period, 223 days
 - Number of attempts, 525
-- Successful double spends, 117 (22%)
+- Successful double spends, 117
+- Success rate, 22%
 - Double spends with the same output, 58, of which:
   - At least one of the transactions has a low fee, 54
   - Neither transaction has a low fee, 4
@@ -82,12 +83,12 @@ So, this issue has everything to be a “tragedy of the commons” type of probl
 
 In order to make some analysis to the network, I used the website [https://doublespend.cash/](https://doublespend.cash/) which detects double spend attempts, and register if they were successful or not.
 
-I build a ruby script to scrap the website and generate a JSON file with all the transactions (518 on the day of writing this post). Than I build a second script to gather some information, and what I found out is astonishing:
+I build a ruby script to scrap the website and generate a JSON file with all the transactions (525 on the day of writing this post). Than I build a second script to gather some information, and what I found out is astonishing:
 
 - Analysis period from Feb 13 to Sep 19 2018, 217 days;
-- There were 518 double spend attempts;
+- There were 525 double spend attempts;
 - There are more then 2 double spend attempts per day;
-- Of those 518 attempts, 114 attempts were successful;
+- Of those 525 attempts, 117 attempts were successful;
 - Around 22% of all double spend attempts are successful.
 
 It looks like ¼ of the miners are breaking ranks and are not following the “first-seen-safe” rule, exactly as the tragedy of the commons theory predicts.
