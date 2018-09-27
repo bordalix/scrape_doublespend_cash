@@ -5,7 +5,8 @@
 Double spend is when a set of coins is spent in more than one transaction.
 This can happen for various reasons, but one of the reasons is fraud attempts.
 
-Bitcoin Cash accepts 0-conf payments, which I consider insecure by default. But I would like to have some data to support this, so I went looking.
+Bitcoin Cash accepts 0-conf payments, which I consider insecure by default.
+But I would like to have some data to support this, so I went looking.
 
 Since someone developed a website for detecting double spends on the Bitcoin Cash network,
 I decided to scrape it and get some numbers from it. The site in question is:
@@ -15,10 +16,16 @@ I decided to scrape it and get some numbers from it. The site in question is:
 ### Numbers
 
 - Date of first transaction, 2018-02-13 11:34:44 +0000
-- Date of last transaction, 2018-09-19 00:32:49 +0100
-- Period, 217 days
-- Number of attempts, 518
-- Successful double spends, 114 (22%)
+- Date of last transaction, 2018-09-25 10:50:02 +0100
+- Period, 223 days
+- Number of attempts, 525
+- Successful double spends, 117 (22%)
+- Double spends with the same output, 58, of which:
+  - At least one of the transactions has a low fee, 54
+  - Neither transaction has a low fee, 4
+- Double spends with a different output, 59, of which:
+  - At least one of the transactions has a low fee, 41
+  - Neither transaction has a low fee, 18
 
 ### Files
 

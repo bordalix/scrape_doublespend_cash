@@ -19,14 +19,39 @@ end
 
 doubles = data.select { |tx| tx['double']['confirmed'] }
 
-stat = {
-  :total => data.length,
-  :doubles => doubles.length,
-  :percentage => (doubles.length * 100 / data.length),
-  :first_tx => first_tx,
-  :last_tx => last_tx,
-  :period => ((last_tx - first_tx) / (60*60*24)).to_i
+# check for doubles with the same output
+same_output = doubles.select { |tx| tx['origin']['output']['address'] == tx['double']['output']['address'] }
+diff_output = doubles.select { |tx| tx['origin']['output']['address'] != tx['double']['output']['address'] }
+
+# check for low fees in transactions
+same_output_low_fee  = same_output.select { |tx| tx['origin']['fee'] <  1 || tx['double']['fee'] <  1 }
+same_output_high_fee = same_output.select { |tx| tx['origin']['fee'] >= 1 && tx['double']['fee'] >= 1 }
+diff_output_low_fee  = diff_output.select { |tx| tx['origin']['fee'] <  1 || tx['double']['fee'] <  1 }
+diff_output_high_fee = diff_output.select { |tx| tx['origin']['fee'] >= 1 && tx['double']['fee'] >= 1 }
+
+stats = {
+  :first_tx_timestamp => first_tx,
+  :last_tx_timestamp => last_tx,
+  :period_in_days => ((last_tx - first_tx) / (60*60*24)).to_i,
+  :total_number_of_doublespend_attempts => data.length,
+  :successful_doublespend_attempts => doubles.length,
+  :success_rate => (doubles.length * 100 / data.length).to_i.to_s + '%',
+  :doublespend_attempts_with_same_output => {
+    :count => same_output.length,
+    :at_least_one_tx_has_a_low_fee => same_output_low_fee.length,
+    :neither_tx_has_a_low_fee => {
+      :count => same_output_high_fee.length,
+      :timestamps => same_output_high_fee.map {|tx| tx['origin']['timestamp']}
+    }
+  },
+  :doublespend_attempts_with_different_output => {
+    :count => diff_output.length,
+    :at_least_one_tx_has_a_low_fee => diff_output_low_fee.length,
+    :neither_tx_has_a_low_fee => {
+      :count => diff_output_high_fee.length,
+      :timestamps => diff_output_high_fee.map {|tx| tx['origin']['timestamp']}
+    }
+  }
 }
 
-puts JSON.pretty_generate stat
-
+puts JSON.pretty_generate stats
