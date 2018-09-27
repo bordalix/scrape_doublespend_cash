@@ -2,6 +2,272 @@
   {
     "origin": {
       "confirmed": true,
+      "raw_data": "https://doublespend.cash/txdata/5fb8e512190a3a660f18cd43c46962df24b299cc.json",
+      "txid": "ab853de6e16f1053c6de1f7da5c6fbbf276f0d5ad06a39122d30b860f3cf942a",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/ab853de6e16f1053c6de1f7da5c6fbbf276f0d5ad06a39122d30b860f3cf942a",
+      "timestamp": "2018-09-25 10:50:02 +0100",
+      "fee": 10.04444444,
+      "input": {
+        "amount": 0.017,
+        "address": "d0c27f44cb89559bdb39fbe800bc93f9dfb6e4ee40e00e3dcf0deffbcd28fd2c",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/d0c27f44cb89559bdb39fbe800bc93f9dfb6e4ee40e00e3dcf0deffbcd28fd2c"
+      },
+      "output": {
+        "amount": 0.00406205,
+        "address": "qrqsmkp383qpy0jwpdkdm7dzm56qd7f3acjnge2enk",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qrqsmkp383qpy0jwpdkdm7dzm56qd7f3acjnge2enk"
+      }
+    },
+    "double": {
+      "confirmed": false,
+      "raw_data": "https://doublespend.cash/txdata/5fb8e512190a3a660f18cd43c46962df24b299cc.json",
+      "txid": "07bf190d7fec3170ab39a2da93da48397c269c6a13da5dea972c62d5cf54de5a",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/07bf190d7fec3170ab39a2da93da48397c269c6a13da5dea972c62d5cf54de5a",
+      "timestamp": "2018-09-25 10:52:00 +0100",
+      "fee": 10.04444444,
+      "input": {
+        "amount": 0.017,
+        "address": "d0c27f44cb89559bdb39fbe800bc93f9dfb6e4ee40e00e3dcf0deffbcd28fd2c",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/d0c27f44cb89559bdb39fbe800bc93f9dfb6e4ee40e00e3dcf0deffbcd28fd2c"
+      },
+      "output": {
+        "amount": 0.00406205,
+        "address": "qrqsmkp383qpy0jwpdkdm7dzm56qd7f3acjnge2enk",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qrqsmkp383qpy0jwpdkdm7dzm56qd7f3acjnge2enk"
+      }
+    }
+  },
+  {
+    "origin": {
+      "confirmed": true,
+      "raw_data": "https://doublespend.cash/txdata/418ee010ab164b2c21edeb3f195fdccf03d6801e.json",
+      "txid": "3e909d5acd7fa47e2d23367980de84fd8c87d8787fc7dc311c46031a615b171c",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/3e909d5acd7fa47e2d23367980de84fd8c87d8787fc7dc311c46031a615b171c",
+      "timestamp": "2018-09-25 09:26:59 +0100",
+      "fee": 1.32743363,
+      "input": {
+        "amount": 13.861265,
+        "address": "17c0369b5931ff72053f3873b9c12d3279160d65d937213a3eef037ee6f4197a",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/17c0369b5931ff72053f3873b9c12d3279160d65d937213a3eef037ee6f4197a"
+      },
+      "output": {
+        "amount": 1.0,
+        "address": "qr3m4v6cvxyh0q5vqkxrdc5kw4eefsaqyv7600szcm",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qr3m4v6cvxyh0q5vqkxrdc5kw4eefsaqyv7600szcm"
+      }
+    },
+    "double": {
+      "confirmed": false,
+      "raw_data": "https://doublespend.cash/txdata/418ee010ab164b2c21edeb3f195fdccf03d6801e.json",
+      "txid": "00df0799ca8e31d702609db2204c014bea5df06ea1aee575d27ee3f62e758bd6",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/00df0799ca8e31d702609db2204c014bea5df06ea1aee575d27ee3f62e758bd6",
+      "timestamp": "2018-09-25 09:27:09 +0100",
+      "fee": 1.33333333,
+      "input": {
+        "amount": 13.861265,
+        "address": "17c0369b5931ff72053f3873b9c12d3279160d65d937213a3eef037ee6f4197a",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/17c0369b5931ff72053f3873b9c12d3279160d65d937213a3eef037ee6f4197a"
+      },
+      "output": {
+        "amount": 1.0,
+        "address": "qqy3mun4k6y07p3vfalvypg4m2qhp8xjq5qyuey0ls",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qqy3mun4k6y07p3vfalvypg4m2qhp8xjq5qyuey0ls"
+      }
+    }
+  },
+  {
+    "origin": {
+      "confirmed": false,
+      "raw_data": "https://doublespend.cash/txdata/3007e7fd6585271335c2be37930def53db461e05.json",
+      "txid": "2d3b7922e4f3cce41b8defbaf63df4c8fedd8360fe6fcb0c58e23e900c057fc4",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/2d3b7922e4f3cce41b8defbaf63df4c8fedd8360fe6fcb0c58e23e900c057fc4",
+      "timestamp": "2018-09-24 17:20:22 +0100",
+      "fee": 1.0052356,
+      "input": {
+        "amount": 0.00010926,
+        "address": "4d86be84dcc08990126e41c744e8b56532f4c86286885b884e459e7b0c4306e8",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/4d86be84dcc08990126e41c744e8b56532f4c86286885b884e459e7b0c4306e8"
+      },
+      "output": {
+        "amount": 0.00010734,
+        "address": "qrp5g7wr5pyvlu8x05jpwz7p975pxy6hnsrr8csghv",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qrp5g7wr5pyvlu8x05jpwz7p975pxy6hnsrr8csghv"
+      }
+    },
+    "double": {
+      "confirmed": true,
+      "raw_data": "https://doublespend.cash/txdata/3007e7fd6585271335c2be37930def53db461e05.json",
+      "txid": "f5ef47ea75a2a0ccc033dd532c611c8fdf38fa791a6f35e100b587c599f24715",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/f5ef47ea75a2a0ccc033dd532c611c8fdf38fa791a6f35e100b587c599f24715",
+      "timestamp": "2018-09-24 17:21:29 +0100",
+      "fee": 0.52083333,
+      "input": {
+        "amount": 0.00010926,
+        "address": "4d86be84dcc08990126e41c744e8b56532f4c86286885b884e459e7b0c4306e8",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/4d86be84dcc08990126e41c744e8b56532f4c86286885b884e459e7b0c4306e8"
+      },
+      "output": {
+        "amount": 0.00010826,
+        "address": "qrp5g7wr5pyvlu8x05jpwz7p975pxy6hnsrr8csghv",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qrp5g7wr5pyvlu8x05jpwz7p975pxy6hnsrr8csghv"
+      }
+    }
+  },
+  {
+    "origin": {
+      "confirmed": false,
+      "raw_data": "https://doublespend.cash/txdata/cdf053576f273997886632926dad6a2ed4340c48.json",
+      "txid": "b8332a0a866e677bd56fb6e59f73e0db6faf11686e890efcbe5d6368869a3411",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/b8332a0a866e677bd56fb6e59f73e0db6faf11686e890efcbe5d6368869a3411",
+      "timestamp": "2018-09-24 17:16:56 +0100",
+      "fee": 1.02366864,
+      "input": {
+        "amount": 7.54e-06,
+        "address": "f6a870dda97ce2089396f786bd5bb64100dccc927bc29f5de5262f9488426bb7",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/f6a870dda97ce2089396f786bd5bb64100dccc927bc29f5de5262f9488426bb7"
+      },
+      "output": {
+        "amount": 1.165e-05,
+        "address": "qr9dxt5nxlxxy4x392emvxa76yu324y9hclwkyne39",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qr9dxt5nxlxxy4x392emvxa76yu324y9hclwkyne39"
+      }
+    },
+    "double": {
+      "confirmed": true,
+      "raw_data": "https://doublespend.cash/txdata/cdf053576f273997886632926dad6a2ed4340c48.json",
+      "txid": "c819c8f299cfcd971c53c77fe4613ab43337f30a1aa4dc98c1a1b2158b5a8154",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/c819c8f299cfcd971c53c77fe4613ab43337f30a1aa4dc98c1a1b2158b5a8154",
+      "timestamp": "2018-09-24 17:21:29 +0100",
+      "fee": 0.94545455,
+      "input": {
+        "amount": 7.54e-06,
+        "address": "f6a870dda97ce2089396f786bd5bb64100dccc927bc29f5de5262f9488426bb7",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/f6a870dda97ce2089396f786bd5bb64100dccc927bc29f5de5262f9488426bb7"
+      },
+      "output": {
+        "amount": 0.0,
+        "address": null,
+        "explorer": ""
+      }
+    }
+  },
+  {
+    "origin": {
+      "confirmed": true,
+      "raw_data": "https://doublespend.cash/txdata/8ab3315af5f36b2abc9839f65ea44f6583f7dfd7.json",
+      "txid": "e7d1662d58e735dcc66c515303b83e1e6da491d4cdcb7cfa7df6cf39c376e23c",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/e7d1662d58e735dcc66c515303b83e1e6da491d4cdcb7cfa7df6cf39c376e23c",
+      "timestamp": "2018-09-23 17:01:55 +0100",
+      "fee": 444.44444444,
+      "input": {
+        "amount": 0.01309529,
+        "address": "d7ff5ce11ef0567c5930501c50c200b57ed0b2456e8712123143f3bf034b93e5",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/d7ff5ce11ef0567c5930501c50c200b57ed0b2456e8712123143f3bf034b93e5"
+      },
+      "output": {
+        "amount": 0.00204394,
+        "address": "qqg7rwvfyv8qd7v0n45smpy2zdxg4pxsfsj38m0ldg",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qqg7rwvfyv8qd7v0n45smpy2zdxg4pxsfsj38m0ldg"
+      }
+    },
+    "double": {
+      "confirmed": false,
+      "raw_data": "https://doublespend.cash/txdata/8ab3315af5f36b2abc9839f65ea44f6583f7dfd7.json",
+      "txid": "16ea9bc853059bfc34c7110ce3c07f430508666414d47e6a2cd487cecdd268c4",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/16ea9bc853059bfc34c7110ce3c07f430508666414d47e6a2cd487cecdd268c4",
+      "timestamp": "2018-09-23 17:08:20 +0100",
+      "fee": 444.44444444,
+      "input": {
+        "amount": 0.01309529,
+        "address": "d7ff5ce11ef0567c5930501c50c200b57ed0b2456e8712123143f3bf034b93e5",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/d7ff5ce11ef0567c5930501c50c200b57ed0b2456e8712123143f3bf034b93e5"
+      },
+      "output": {
+        "amount": 0.00245169,
+        "address": "qqg7rwvfyv8qd7v0n45smpy2zdxg4pxsfsj38m0ldg",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qqg7rwvfyv8qd7v0n45smpy2zdxg4pxsfsj38m0ldg"
+      }
+    }
+  },
+  {
+    "origin": {
+      "confirmed": false,
+      "raw_data": "https://doublespend.cash/txdata/0980b6f33494763d68377c591b016d70d7d08684.json",
+      "txid": "42fa9b46ac9f7bbc94148d275416d8e71eb16bcf52e6fad11c29e0a4dade2e91",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/42fa9b46ac9f7bbc94148d275416d8e71eb16bcf52e6fad11c29e0a4dade2e91",
+      "timestamp": "2018-09-20 16:15:18 +0100",
+      "fee": 0.44247788,
+      "input": {
+        "amount": 1.009098,
+        "address": "bf94cdfb1ecb536d0a9e7ddbebd52496ae4017c0e72394079663f7d9c3c6a613",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/bf94cdfb1ecb536d0a9e7ddbebd52496ae4017c0e72394079663f7d9c3c6a613"
+      },
+      "output": {
+        "amount": 0.1,
+        "address": "qqr47hr28zqlf7ezenawat7te8aj9z4tpqs3dsht9m",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qqr47hr28zqlf7ezenawat7te8aj9z4tpqs3dsht9m"
+      }
+    },
+    "double": {
+      "confirmed": true,
+      "raw_data": "https://doublespend.cash/txdata/0980b6f33494763d68377c591b016d70d7d08684.json",
+      "txid": "1bf99abbdc4a829f2f46935581fa9e3121de18e3d47874e546a4a2d093ab3573",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/1bf99abbdc4a829f2f46935581fa9e3121de18e3d47874e546a4a2d093ab3573",
+      "timestamp": "2018-09-20 16:56:30 +0100",
+      "fee": 2.0104712,
+      "input": {
+        "amount": 1.009098,
+        "address": "bf94cdfb1ecb536d0a9e7ddbebd52496ae4017c0e72394079663f7d9c3c6a613",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/bf94cdfb1ecb536d0a9e7ddbebd52496ae4017c0e72394079663f7d9c3c6a613"
+      },
+      "output": {
+        "amount": 1.00909416,
+        "address": "qpkmsgsa3k9fq0wv6qlt6qqxg4lecjeu2cx4ku2vew",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qpkmsgsa3k9fq0wv6qlt6qqxg4lecjeu2cx4ku2vew"
+      }
+    }
+  },
+  {
+    "origin": {
+      "confirmed": true,
+      "raw_data": "https://doublespend.cash/txdata/7fec3a28fcee43d2fc59097c264e5058d4a5d6a4.json",
+      "txid": "70ac7f274c29daef49ca17788c3f1a446ab54d55a9938e3d00301389fdf5432c",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/70ac7f274c29daef49ca17788c3f1a446ab54d55a9938e3d00301389fdf5432c",
+      "timestamp": "2018-09-19 23:18:49 +0100",
+      "fee": 10.05235602,
+      "input": {
+        "amount": 0.56630988,
+        "address": "2f731eda7a50a997882ca9dd55276eee38e85556892d30a23a39e7b935672661",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/2f731eda7a50a997882ca9dd55276eee38e85556892d30a23a39e7b935672661"
+      },
+      "output": {
+        "amount": 0.56629068,
+        "address": "qpwkhuy54e5uv4pche6nz88gn6dlxtl4uyvm06lpds",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qpwkhuy54e5uv4pche6nz88gn6dlxtl4uyvm06lpds"
+      }
+    },
+    "double": {
+      "confirmed": false,
+      "raw_data": "https://doublespend.cash/txdata/7fec3a28fcee43d2fc59097c264e5058d4a5d6a4.json",
+      "txid": "b61a95c2c233579d7c384aacb3886e5f196b112b190c986f216c7ef2fac74af1",
+      "txid_url": "https://blockchair.com/bitcoin-cash/transaction/b61a95c2c233579d7c384aacb3886e5f196b112b190c986f216c7ef2fac74af1",
+      "timestamp": "2018-09-19 23:19:08 +0100",
+      "fee": 10.05235602,
+      "input": {
+        "amount": 0.56630988,
+        "address": "2f731eda7a50a997882ca9dd55276eee38e85556892d30a23a39e7b935672661",
+        "explorer": "https://blockchair.com/bitcoin-cash/transaction/2f731eda7a50a997882ca9dd55276eee38e85556892d30a23a39e7b935672661"
+      },
+      "output": {
+        "amount": 0.56629068,
+        "address": "qpwkhuy54e5uv4pche6nz88gn6dlxtl4uyvm06lpds",
+        "explorer": "https://blockchair.com/bitcoin-cash/address/qpwkhuy54e5uv4pche6nz88gn6dlxtl4uyvm06lpds"
+      }
+    }
+  },
+  {
+    "origin": {
+      "confirmed": true,
       "raw_data": "https://doublespend.cash/txdata/f902e72b95db881dd27c9954c1bc98493de06b9c.json",
       "txid": "4829ff7c3638c11a4a623a3b3c012d05033a435a3cc18cec2243b9804dd468be",
       "txid_url": "https://blockchair.com/bitcoin-cash/transaction/4829ff7c3638c11a4a623a3b3c012d05033a435a3cc18cec2243b9804dd468be",
