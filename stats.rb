@@ -5,6 +5,8 @@
 require 'json'
 require 'time'
 
+showTimestamps = ARGV[0] && ARGV[0] == 'full'
+
 file = File.read('output.json')
 data = JSON.parse(file)
 
@@ -41,7 +43,9 @@ stats = {
     :at_least_one_tx_has_a_low_fee => same_output_low_fee.length,
     :neither_tx_has_a_low_fee => {
       :count => same_output_high_fee.length,
-      :timestamps => same_output_high_fee.map {|tx| tx['origin']['timestamp']}
+      :timestamps => showTimestamps ?
+                     same_output_high_fee.map {|tx| tx['origin']['timestamp']} :
+                     "use './stats.rb full' to see timestamps"
     }
   },
   :doublespend_attempts_with_different_output => {
@@ -49,7 +53,9 @@ stats = {
     :at_least_one_tx_has_a_low_fee => diff_output_low_fee.length,
     :neither_tx_has_a_low_fee => {
       :count => diff_output_high_fee.length,
-      :timestamps => diff_output_high_fee.map {|tx| tx['origin']['timestamp']}
+      :timestamps => showTimestamps ?
+                     diff_output_high_fee.map {|tx| tx['origin']['timestamp']} :
+                     "use './stats.rb full' to see timestamps"
     }
   }
 }
