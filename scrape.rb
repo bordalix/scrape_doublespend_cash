@@ -7,11 +7,14 @@
 require 'nokogiri'
 require 'open-uri'
 require 'json'
+require 'time'
 
 SITE_URL = 'https://doublespend.cash/'
 OUTPUT_FILE = './output.json'
+FIRST_DATE = Time.parse('2018-02-13 11:34:44')
 
 $allJSON = []
+$last_tx_timestamp = Time.now
 
 current_page = 1
 last_page = false
@@ -37,12 +40,14 @@ end
 def parseTx(tx)
   items = tx.at_css("ul[class='list-group']").css('li')
   (input, output) = tx.css('div')
+  timestamp = Time.parse(items[1].text.split("\n")[0].split(': ')[1])
+  $last_tx_timestamp = timestamp
   aux = {
     :confirmed => !!tx.at_css("span[title='Confirmed!']"),
     :raw_data => SITE_URL + tx.at_css("a")['href'],
     :txid => items[0].at_css('a')['href'].split('/')[-1],
     :txid_url => items[0].at_css('a')['href'],
-    :timestamp => Time.parse(items[1].text.split("\n")[0].split(': ')[1]),
+    :timestamp => timestamp,
     :fee => items[3].text.split(' ')[1].to_f,
     :input => parsePut(input),
     :output => parsePut(output)
@@ -60,9 +65,13 @@ def parseForJSON(doc)
   end
 end
 
+def daysToFinish
+  (($last_tx_timestamp - FIRST_DATE) / (60*60*24)).to_i
+end
+
 # main loop
 while !last_page
-  print " scraping page #{current_page}  \r"
+  print " scraping page #{current_page} - days to finish = #{daysToFinish()}  \r"
   url = getURLfor(current_page)
   begin
     file = open(url)
